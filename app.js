@@ -17,7 +17,7 @@ function geo() {
 const getLocation = async (lat, long) => {
   try {
     const response = await fetch(
-      `http://api.positionstack.com/v1/reverse?access_key=b6024a0e78092d3318fc891bf1b0d33c&query=${lat},${long}`
+      `https://api.positionstack.com/v1/reverse?access_key=b6024a0e78092d3318fc891bf1b0d33c&query=${lat},${long}`
     );
 
     const data = await response.json();
